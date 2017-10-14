@@ -36,7 +36,6 @@ silverstripe-frontend-builder:
         image:
           method: ScaleWidth
           width: 1200
-      preview: mysite/sections/textimage/textimage.png
       template: mysite/sections/textimage/textimage.html
       formdef: mysite/sections/textimage/textimage.json
     # teaserbox:
