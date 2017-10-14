@@ -29,13 +29,13 @@ silverstripe-frontend-builder:
       images:
         image:
           method: ScaleWidth
-          width: 1200
+          width: 800
     textimage:
-      name: Bild/Text-Module
+      name: Image/Text-Module
       images:
         image:
           method: ScaleWidth
-          width: 1200
+          width: 400
       template: mysite/sections/textimage/textimage.html
       formdef: mysite/sections/textimage/textimage.json
     # teaserbox:

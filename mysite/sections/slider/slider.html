@@ -1,10 +1,13 @@
-            <section class="section section--image" data-sfb-section>
+            <section class="section section--slider" data-sfb-section>
                 <div class="section_content">
+                    {{^slides}}
+                    <p>Empty slider, please add slides.</p>
+                    {{/slides}}
                     <div class="section_slider">
                         {{#slides}}
                         <div class="section_slide">
                             <p><em>{{headline}}</em> {{headline2}}</p>
-                            <img src="{{image}}{{^image}}mysite/photos/2016_06_08_TechnoZ-571.jpg{{/image}}"/>
+                            <img src="{{image}}{{^image}}http://lorempixel.com/400/300/animals/1/{{/image}}"/>
                         </div>
                         {{/slides}}
                     </div>

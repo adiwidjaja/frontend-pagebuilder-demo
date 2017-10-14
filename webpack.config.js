@@ -7,9 +7,6 @@ module.exports = {
         main: [
             // 'webpack-dev-server/client?http://localhost:8080',
             './mysite/src/main.js'
-        ],
-        editor: [
-            './mysite/src/scss/editor.scss'
         ]
     },
     output: {
@@ -40,14 +37,14 @@ module.exports = {
             {
                 test   : /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
                 loader: "file-loader?name=fonts/[name].[ext]&context=./something",
-            },
-            {
-                test: /\.js|\.jsx$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015']
-                }
             }
+            // {
+            //     test: /\.js|\.jsx$/,
+            //     loader: 'babel-loader',
+            //     query: {
+            //         presets: ['es2015']
+            //     }
+            // }
         ]
     },
     plugins: [

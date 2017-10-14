@@ -1,12 +1,14 @@
 require("./scss/styles.scss");
 
-import $ from "jquery";
-window.$ = $;
+$ = require("jquery");
+require("slick-carousel");
+// import $ from "jquery";
+// window.$ = $;
 
 function init() {
 }
 function initlate() {
-    $(".slider").slick({
+    $(".section_slider").slick({
         dots:true,
         arrows:false,
         fade:false

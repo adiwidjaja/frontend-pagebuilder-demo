@@ -9,7 +9,7 @@
                 </div>
             </section>
 <% end_if %>
- <div class="content" <% if $EditMode %>data-fpb-content <% end_if %>>
+ <div class="fpb-content" <% if $EditMode %>data-fpb-content <% end_if %>>
      <% if $EditMode %>
     <script>
     var content = $JsonContent;

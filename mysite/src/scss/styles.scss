@@ -1,2 +1,52 @@
 @import "functions";
+@import "~slick-carousel/slick/slick.scss";
 
+.sfb-editmode {
+    padding-top:70px;
+}
+
+.section {
+    &.section--textimage {
+        .section_content {
+            @media (min-width: 800px) {
+                display:flex;
+                width:100%;
+
+                .section_image {
+                    width: calc(100% / 3);
+                    padding-right:20px;
+
+                    img {
+                        width:100%;
+                    }
+                }
+                .section_text {
+                    width:calc(100% / 3 * 2);
+                }
+            }
+        }
+        &.section--imageright {
+            .section_image {
+                order:2;
+            }
+            .section_text {
+                order:1;
+            }
+        }
+    }
+    &.section--slider {
+        .slick-dots {
+            list-style-type:none;
+            li {
+                list-style-type:none;
+            }
+            button {
+                margin:0;
+                background-color:#ccc;
+            }
+            .slick-active button {
+                background-color:#b80000;
+            }
+        }
+    }
+}

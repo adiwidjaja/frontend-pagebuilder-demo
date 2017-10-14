@@ -6,16 +6,11 @@
     "load_image": {
       "type": "string",
       "format": "data-url",
-      "title": "Bild"
+      "title": "Image"
     },
-    "hide_text": {
+    "image_right": {
       "type": "boolean",
-      "title": "Text ausblenden"
-    },
-    "disrupter": {
-      "type": "boolean",
-      "title": "Störer anzeigen",
-      "default": false
+      "title": "Image right"
     }
   }
 }

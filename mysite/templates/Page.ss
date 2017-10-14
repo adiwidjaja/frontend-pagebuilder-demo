@@ -27,9 +27,11 @@ Change it, enhance it and most importantly enjoy it!
     <% require themedCSS('form') %>
     <% require themedCSS('layout') %>
     <link rel="shortcut icon" href="themes/simple/images/favicon.ico" />
+    <link rel="stylesheet" href="mysite/css/main.css" />
+    <%-- Needed for frontend page builder --%>
     <% include sfb_head %>
 </head>
-<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %><% if $CanEdit %> sfb-editmode<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 <% include Header %>
 <div class="main" role="main">
     <div class="inner typography line">
@@ -40,6 +42,8 @@ Change it, enhance it and most importantly enjoy it!
 
 <% require javascript('//code.jquery.com/jquery-1.7.2.min.js') %>
 <% require themedJavascript('script') %>
+<script src="mysite/js/main.js"></script>
+<%-- Needed for frontend page builder --%>
 <% include sfb_tools %>
 </body>
 </html>
