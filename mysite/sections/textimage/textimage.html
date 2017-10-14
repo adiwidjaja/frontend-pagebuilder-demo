@@ -1,0 +1,22 @@
+<section class="section section--image">
+    <div class="section_content">
+        <img src="{{image}}{{^image}}mysite/photos/2016_06_08_TechnoZ-571.jpg{{/image}}"/>
+        {{^hide_text}}
+        <div class="section_overlay">
+            <div class="section_overlay_content">
+                <h2 data-sfb-value="headline" data-sfb-valuetype="string">{{&headline}}{{^headline}}Headline{{/headline}}</h2>
+                <div data-sfb-value="text" data-sfb-valuetype="rich">
+                {{&text}}{{^text}}<p>Lorem ipsum dolor sit amet</p>{{/text}}
+                </div>
+            </div>
+        </div>
+        {{/hide_text}}
+        {{#disrupter}}
+        <div class="section_disrupter">
+            <div class="section_disrupter_content" data-sfb-value="disruptertext" data-sfb-valuetype="rich">
+                {{&disruptertext}}{{^disruptertext}}<h2>Störertext<br/><a href="#">weiter</a></h2>{{/disruptertext}}
+            </div>
+        </div>
+        {{/disrupter}}
+    </div>
+</section>

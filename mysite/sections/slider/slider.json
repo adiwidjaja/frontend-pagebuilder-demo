@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "description": "",
+  "type": "object",
+  "required": [
+  ],
+  "definitions": {
+    "Slide": {
+      "type": "object",
+      "properties": {
+        "headline": {
+          "type": "string",
+          "title": "Headline",
+          "default": ""
+        },
+        "load_image": {
+          "type": "string",
+          "format": "data-url",
+          "title": "Bild"
+        }
+      }
+    }
+  },
+  "properties": {
+    "slides": {
+      "type": "array",
+      "title": "Slides",
+      "items": {
+        "$ref": "#/definitions/Slide"
+      }
+    }
+  }
+}

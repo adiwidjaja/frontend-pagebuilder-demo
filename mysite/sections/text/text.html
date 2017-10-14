@@ -1,0 +1,10 @@
+<section class="section section--intro">
+    <div class="section_content">
+        <h1 data-sfb-value="headline" data-sfb-valuetype="string">{{& headline}}{{^headline}}Headline{{/headline}}</h1>
+        {{^hide_text}}
+        <div class="section_content_text" data-sfb-value="text" data-sfb-valuetype="rich">
+        {{& text}}{{^text}}<p>Lorem ipsum dolor sit amet</p>{{/text}}
+        </div>
+        {{/hide_text}}
+    </div>
+</section>

@@ -1,0 +1,16 @@
+{
+  "title": "",
+  "description": "",
+  "type": "object",
+  "required": [
+  ],
+  "properties": {
+    "hide_text": {
+      "type": "boolean",
+      "title": "Unterzeile ausblenden"
+    }
+  },
+  "defaults": {
+    "hide_text": false
+  }
+}

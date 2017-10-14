@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+  ],
+  "properties": {
+    "load_image": {
+      "type": "string",
+      "format": "data-url",
+      "title": "Bild"
+    },
+    "hide_text": {
+      "type": "boolean",
+      "title": "Text ausblenden"
+    },
+    "disrupter": {
+      "type": "boolean",
+      "title": "Störer anzeigen",
+      "default": false
+    }
+  }
+}

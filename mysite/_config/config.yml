@@ -1,0 +1,50 @@
+---
+Name: Site config
+---
+silverstripe-frontend-builder:
+  groups:
+    default:
+      name: Standard
+      elements:
+        - text
+        - slider
+        - textimage
+    # teasers:
+    #   name: Teaser
+    #   elements:
+    #     - imageteaser
+    #     - newsteaser
+    #     - rssteaser
+    #     - embedteaser
+  modules:
+    text:
+      name: Text
+      template: mysite/sections/text/text.html
+      smalltext: mysite/sections/text/text.jpg
+    slider:
+      name: Slider
+      template: mysite/sections/slider/slider.html
+      formdef: mysite/sections/slider/slider.json
+      # preview: mysite/sections/slider/slider.jpg
+      images:
+        image:
+          method: ScaleWidth
+          width: 1200
+    textimage:
+      name: Bild/Text-Module
+      images:
+        image:
+          method: ScaleWidth
+          width: 1200
+      preview: mysite/sections/textimage/textimage.png
+      template: mysite/sections/textimage/textimage.html
+      formdef: mysite/sections/textimage/textimage.json
+    # teaserbox:
+    #   name: Teaserbox
+    #   template: mysite/sections/teaserbox/teaserbox.html
+    #   subsections:
+    #     - children
+# Don't bootstrap memberloginform.
+Injector:
+  MemberLoginForm:
+    class: MemberLoginForm

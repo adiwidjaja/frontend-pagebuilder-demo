@@ -1,0 +1,61 @@
+<section class="section section--intro" data-sfb-section>
+    <div class="section_content">
+        <h1 data-sfb-value="headline" data-sfb-valuetype="string">Büros in Salzburg mieten</h1>
+        <div class="section_content_text" data-sfb-value="text" data-sfb-valuetype="rich">
+        <p>Das Seminarzentrum im Techno_Z Salzburg verfügt über vier Seminarräume. Drei Räume können zu einem großen Veranstaltungssaal verbunden werden. Es eignet sich perfekt für Veranstaltungen von 10 bis 80 Personen: von Seminaren, Workshops und Besprechungen bis zu Abendveranstaltungen.</p>
+        </div>
+    </div>
+</section>
+<script type="text/json" data-sfb>
+    {
+        name: "Intro",
+        element: ".section--intro",
+        inline: {
+            "headline": {
+                type: "string",
+                element: ".section_content h1"
+            },
+            "text": {
+                type: "rich",
+                element: ".section_content .section_content_text"
+            }
+        },
+        form: {
+          "title": "A registration form",
+          "description": "A simple form example.",
+          "type": "object",
+          "required": [
+            "firstName",
+            "lastName"
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "First name"
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last name"
+            },
+            "age": {
+              "type": "integer",
+              "title": "Age"
+            },
+            "bio": {
+              "type": "string",
+              "title": "Bio"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password",
+              "minLength": 3
+            },
+            "telephone": {
+              "type": "string",
+              "title": "Telephone",
+              "minLength": 10
+            }
+          }
+        }
+    }
+</script>
